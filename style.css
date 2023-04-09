@@ -490,7 +490,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    animation: slidedown 1.5s linear forwards;
+    animation: slidedown 1.3s linear forwards;
   }
 
   .nav-desktop:hover {

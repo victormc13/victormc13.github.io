@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-blue-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
 :root {
   --primary-green: #36b37e;
   --primary-green-light: #c5e9da;
   --secondary-green-light: #ebf0ee;
-  --primary-green-dark: #3a4a42;
   --primary-blue-dark: #172b4d;
   --primary-white-light: #fff;
-  --project-btn: #36b37f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 * {
@@ -149,7 +164,6 @@ header {
 a:visited {
   color: var(--primary-blue-dark);
   gap: 1rem;
-  align-items: baseline;
 }
 
 /* Adding animation to social media icons */
@@ -159,15 +173,12 @@ a:visited {
 }
 
 .down-btn {
-  padding: 8px;
   margin-top: 3rem;
   height: 40px;
   width: 40px;
-  line-height: 50%;
-  text-align: center;
+  justify-content: center;
   border-radius: 50%;
   border: 1px solid #dfe1e6;
-  background: url(icons/Icon\ -\ Chevron\ -\ Down\ -\ Larger.svg) no-repeat center center;
   cursor: pointer;
 }
 
@@ -218,16 +229,17 @@ main {
 }
 
 .content-cards h3 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: var(--primary-green-dark);
+  color: var(--primary-blue-dark);
 }
 
 .technologies {
   width: 325px;
   height: 32px;
+  font-weight: 700;
   gap: 8px;
   justify-content: space-between;
   align-items: center;
@@ -240,7 +252,7 @@ main {
   line-height: 18px;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  color: #3a4a42;
+  color: var(--primary-blue-dark);
   background-color: #ebf0ee;
 }
 
@@ -252,18 +264,18 @@ main {
   font-size: 18px;
   border-radius: 4px;
   border: none;
-  color: var(--primary-white-light);
-  background-color: var(--project-btn);
+  color: var(--primary-blue-dark);
+  background-color: var(--primary-green);
   cursor: pointer;
 }
 
 .btn:hover {
-  background: var(--project-btn);
+  background: var(--primary-green);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn:enabled {
-  background: var(--project-btn);
+  background: var(--primary-green);
 }
 
 .btn:active {
@@ -301,8 +313,8 @@ main {
   font-weight: 500;
   font-size: 18px;
   border: none;
-  color: var(--primary-white-light);
-  background: var(--project-btn);
+  color: var(--primary-blue-dark);
+  background: var(--primary-green);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -359,10 +371,10 @@ main {
   padding: 12px;
   font-weight: 600;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 16px;
   border-radius: 8px;
   color: var(--primary-green);
-  background-color: var(--primary-white-light);
+  background-color: var(--primary-blue-dark);
 }
 
 .contact-section {
@@ -427,8 +439,8 @@ textarea:focus {
   font-size: 18px;
   border-radius: 4px;
   border: none;
-  color: var(--primary-white-light);
-  background-color: var(--project-btn);
+  color: var(--primary-blue-dark);
+  background-color: var(--primary-green);
   cursor: pointer;
 }
 
@@ -471,13 +483,28 @@ textarea:focus {
 
   .nav-desktop {
     position: fixed;
-    min-height: 4rem;
+    min-height: 2rem;
     font-size: 1rem;
     font-weight: 700;
+    background-color: #42526e;
     display: flex;
     justify-content: center;
     gap: 2rem;
     animation: slidedown 1.5s linear forwards;
+  }
+
+  .nav-desktop:hover {
+    background-color: #42526e;
+  }
+
+  .nav-desktop a {
+    font-size: 1.2rem;
+    color: var(--primary-green-light);
+  }
+
+  .nav-desktop a:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
   }
 
   @keyframes slidedown {
@@ -500,16 +527,22 @@ textarea:focus {
 
   .intro-container h1 {
     text-align: center;
-    font-weight: 800;
-    font-size: 48px;
+    font-weight: 700;
+    font-size: 50px;
     line-height: 60px;
-    letter-spacing: 0.37px;
+    letter-spacing: 1.37px;
   }
 
   .intro-container p {
-    font-weight: 400;
+    width: 90%;
+    font-weight: 500;
     font-size: 20px;
     line-height: 32px;
+    text-align: center;
+  }
+
+  .work-section {
+    padding-top: 2rem;
   }
 
   .main-title {
@@ -531,7 +564,6 @@ textarea:focus {
 
   .about-me p {
     width: 65%;
-    min-height: auto;
     font-style: normal;
     text-align: center;
   }
@@ -552,7 +584,7 @@ textarea:focus {
   }
 
   .contact-section {
-    margin-top: 6rem;
+    padding-top: 6rem;
     min-height: 630px;
     flex-direction: row;
     justify-content: center;

@@ -110,6 +110,7 @@ After you're finished please remove all the comments and instructions!
 <!-- > Add a link to your deployed project. -->
 
 - [https://victormc13.github.io/](https://victormc13.github.io/)
+- [Portfolio-project video](https://www.loom.com/share/f5b7ea5e76db4ae99a7b101b9701c887)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

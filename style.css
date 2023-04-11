@@ -232,11 +232,11 @@ main {
   background: url(icons/illustration-contact-form.svg) no-repeat right bottom;
 }
 
-.work-section {
+.work-section-container {
   padding-top: 3rem;
 }
 
-.main-title {
+.work-section-container h2 {
   height: 130px;
   font-weight: 700;
   font-size: 40px;
@@ -421,14 +421,14 @@ main {
   background-color: var(--primary-blue-dark);
 }
 
-.contact-section {
+.contact-section-container {
   margin-top: 3rem;
   padding: 3rem 1rem;
   text-align: center;
   gap: 3rem;
 }
 
-.contact-section h2 {
+.contact-section-container h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -585,7 +585,7 @@ textarea:focus {
     text-align: center;
   }
 
-  .work-section {
+  .work-section-container {
     padding-top: 2rem;
   }
 
@@ -620,14 +620,14 @@ textarea:focus {
     justify-content: center;
   }
 
-  .about-section {
+  .about-section-container {
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
   }
 
-  .contact-section {
+  .contact-section-container {
     padding-top: 6rem;
     min-height: 630px;
     flex-direction: row;
@@ -635,7 +635,7 @@ textarea:focus {
     align-items: flex-start;
   }
 
-  .contact-section h2 {
+  .contact-section-container h2 {
     width: 463px;
     font-size: 30px;
   }

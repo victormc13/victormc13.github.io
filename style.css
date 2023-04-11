@@ -72,12 +72,53 @@ h1::after {
   content: "I'm a software developer";
 }
 
-.menu-btn {
-  float: right;
+.nav-mobile {
+  padding: 1rem;
   position: fixed;
+  background-color: var(--primary-green);
+  opacity: 0.8;
+  z-index: 999;
+}
+
+.menu-btn {
   border-style: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+#menu {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  background-color: #e5e5e5;
+  display: none;
+}
+
+.close-btn {
+  align-self: flex-end;
+  border-style: none;
+  background-color: transparent;
+}
+
+.menu-mobile {
+  padding: 1rem;
+  width: 100%;
+  height: 95%;
+  gap: 3rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-color: var(--primary-white-light);
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  align-self: flex-start;
+  align-items: flex-start;
 }
 
 .flex-column {
@@ -99,7 +140,7 @@ header {
 .intro-container {
   min-height: 100%;
   width: 100%;
-  padding: 2rem 2rem 2rem;
+  padding: 5rem 2rem;
   gap: 1rem;
   justify-content: flex-end;
 }
@@ -188,8 +229,11 @@ a:visited {
 }
 
 main {
-  padding-top: 2rem;
   background: url(icons/illustration-contact-form.svg) no-repeat right bottom;
+}
+
+.work-section {
+  padding-top: 3rem;
 }
 
 .main-title {
@@ -379,7 +423,7 @@ main {
 
 .contact-section {
   margin-top: 3rem;
-  padding: 1rem;
+  padding: 3rem 1rem;
   text-align: center;
   gap: 3rem;
 }

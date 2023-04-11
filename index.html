@@ -16,7 +16,7 @@
   <body>
     <header class="flex-column">
       <nav class="nav-mobile hidden-mobile flex-row">
-        <button class="menu-btn">
+        <button class="menu-btn flex-row">
           <img
             src="icons/Icon - Menu.svg"
             alt="menu button"
@@ -25,6 +25,18 @@
           />
         </button>
       </nav>
+      <div id="menu" class="hidden-mobile flex-column">
+        <div class="menu-mobile flex-column">
+          <button class="close-btn">
+            <img src="icons/Icon - Cancel.svg" alt="close button" />
+          </button>
+          <ul class="menu-options">
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
       <nav class="nav-desktop hidden-desktop flex-row">
         <a href="#Portfolio">Portfolio</a>
         <a href="#About">About</a>
@@ -322,5 +334,6 @@
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

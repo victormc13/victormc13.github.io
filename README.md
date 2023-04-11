@@ -47,6 +47,7 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Install](#install)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -71,9 +72,10 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
+    <li>Linters</li>
     <li>HTML</li>
     <li>CSS</li>
-    <li>Linters</li>
+    <li>Javascript</li>
   </ul>
 </details>
 
@@ -163,9 +165,12 @@ Example command:
 ```
 --->
 
-<!-- ### Usage
+### Usage
 
-To run the project, execute the following command: -->
+To run the project, execute the following command:
+
+- go to the folder where you cloned the repository
+- Open the index.html file with your favorite web browser
 
 <!--
 Example command:
@@ -285,6 +290,6 @@ I would like to thank to Microverse for give us this opportunity
 
 This project is [MIT](MIT.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+<!-- _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

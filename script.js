@@ -1,3 +1,4 @@
+//Menu mobile
 const menu = document.getElementById('menu');
 
 document.getElementsByClassName('menu-btn')[0].addEventListener('click', () => {

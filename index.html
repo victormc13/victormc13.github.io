@@ -31,16 +31,16 @@
             <img src="icons/Icon - Cancel.svg" alt="close button" />
           </button>
           <ul class="menu-options">
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#work-section">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </div>
       </div>
       <nav class="nav-desktop hidden-desktop flex-row">
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#About">About</a>
-        <a href="#Contact">Contact</a>
+        <a href="#work-section">Portfolio</a>
+        <a href="#about-section">About</a>
+        <a href="#contact-section">Contact</a>
       </nav>
       <!-- Intro section -->
       <section class="intro-container flex-column">
@@ -110,88 +110,12 @@
     </header>
     <main>
       <!-- My Recent works section -->
-      <section id="Portfolio" class="work-section flex-column">
-        <h2 class="main-title flex-column">
-          My Recent<br class="hidden-mobile" />
-          Works
-        </h2>
-        <div class="projectcards-container">
-          <article class="project-cards flex-column">
-            <div class="content-cards flex-column">
-              <h3>Multi-Post Stories<br />Gain+Glory</h3>
-              <ul class="technologies flex-row">
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button class="project-btn btn">See project</button>
-            </div>
-          </article>
-          <article class="project-cards flex-column">
-            <div class="content-cards flex-column">
-              <h3>Multi-Post Stories<br />Gain+Glory</h3>
-              <ul class="technologies flex-row">
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button class="project-btn btn">See project</button>
-            </div>
-          </article>
-          <article class="project-cards flex-column">
-            <div class="content-cards flex-column">
-              <h3>Multi-Post Stories<br />Gain+Glory</h3>
-              <ul class="technologies flex-row">
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button class="project-btn btn">See project</button>
-            </div>
-          </article>
-          <article class="project-cards flex-column">
-            <div class="content-cards flex-column">
-              <h3>Multi-Post Stories<br />Gain+Glory</h3>
-              <ul class="technologies flex-row">
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button class="project-btn btn">See project</button>
-            </div>
-          </article>
-          <article class="project-cards flex-column">
-            <div class="content-cards flex-column">
-              <h3>Multi-Post Stories<br />Gain+Glory</h3>
-              <ul class="technologies flex-row">
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button class="project-btn btn">See project</button>
-            </div>
-          </article>
-          <article class="project-cards flex-column">
-            <div class="content-cards flex-column">
-              <h3>Multi-Post Stories<br />Gain+Glory</h3>
-              <ul class="technologies flex-row">
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button class="project-btn btn">See project</button>
-            </div>
-          </article>
-        </div>
+      <section id="work-section" class="work-section-container flex-column">
+        <div class="projectcards-container"></div>
+        <div class="shown-project-container flex-column"></div>
       </section>
       <!-- About me section -->
-      <section id="About" class="about-section flex-column">
+      <section id="about-section" class="about-section-container flex-column">
         <div class="about-me flex-column">
           <h2>About me</h2>
           <p>
@@ -234,7 +158,10 @@
         </ul>
       </section>
       <!-- Contact form section -->
-      <section id="Contact" class="contact-section flex-column">
+      <section
+        id="contact-section"
+        class="contact-section-container flex-column"
+      >
         <h2>
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.

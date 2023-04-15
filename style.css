@@ -205,9 +205,10 @@ header {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 50%;
   bottom: 0;
-  width: 100%;
+  transform: translateX(50%);
+  width: 375px;
   height: auto;
   padding: 1rem;
   background-color: #c1c7d0dc;
@@ -220,7 +221,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 345px;
+  width: 340px;
   min-height: 700px;
   max-width: 500px;
   background-color: white;
@@ -687,6 +688,22 @@ textarea:focus {
   .projectcards-container {
     width: 80%;
   }
+
+  .shown-project-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: #c1c7d0dc;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  overflow-y: auto;
+}
 
   .shown-project {
     position: absolute;

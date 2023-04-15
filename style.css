@@ -690,20 +690,20 @@ textarea:focus {
   }
 
   .shown-project-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 100%;
-  height: auto;
-  padding: 1rem;
-  background-color: #c1c7d0dc;
-  backdrop-filter: blur(5px);
-  z-index: 999;
-  overflow-y: auto;
-}
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #c1c7d0dc;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    overflow-y: auto;
+  }
 
   .shown-project {
     position: absolute;

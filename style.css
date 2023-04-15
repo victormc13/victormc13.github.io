@@ -210,7 +210,8 @@ header {
   width: 100%;
   height: auto;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #c1c7d0dc;
+  backdrop-filter: blur(5px);
   z-index: 999;
   overflow-y: auto;
 }
@@ -233,17 +234,18 @@ header {
   font-size: 32px;
 }
 
-.shown-project img {
-  width: 100%;
-  height: auto;
-}
-
 .shown-project p {
   font-size: 1rem;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5rem;
   color: #344563;
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;
+  background: url(icons/Snapshoot\ Portfolio.svg) no-repeat center;
 }
 
 .project-buttons {
@@ -267,26 +269,25 @@ header {
   cursor: pointer;
 }
 
-.live-btn img {
+.live-btn > img {
   width: 2rem;
   height: 50%;
 }
 
-.source-btn img {
+.source-btn > img {
   width: 2rem;
   height: 60%;
 }
 
-.show {
-  display: block;
-}
-
 .close-shown-project {
   position: absolute;
-  top: 4%;
+  width: 24px;
+  height: 24px;
+  top: 4.2%;
   right: 9%;
-  background-color: transparent;
+  background: url(icons/Icon\ -\ Cancel\ project.svg);
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -684,6 +685,39 @@ textarea:focus {
 
   .projectcards-container {
     width: 80%;
+  }
+
+  .shown-project {
+    position: absolute;
+    min-width: 920px;
+    height: 880px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .project-image {
+    height: 580px;
+    min-width: 100%;
+    background: url(icons/Snapshoot\ Portfolio\ desktop.svg) no-repeat center;
+  }
+
+  .project-buttons {
+    width: 95%;
+    position: absolute;
+    top: 75%;
+    justify-content: flex-end;
+  }
+
+  .close-shown-project {
+    top: 2%;
+    width: 40px;
+    height: 40px;
+    background-image: url(icons/Disabled.svg);
+    border-radius: 8px;
   }
 
   .about-me {

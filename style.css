@@ -77,7 +77,6 @@ h1::after {
   position: fixed;
   background-color: var(--primary-green);
   opacity: 0.8;
-  z-index: 2;
 }
 
 .menu-btn {
@@ -640,6 +639,7 @@ textarea:focus {
     justify-content: center;
     gap: 2rem;
     animation: slidedown 1.3s linear forwards;
+    z-index: 99;
   }
 
   .nav-desktop:hover {

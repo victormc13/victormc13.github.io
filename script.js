@@ -217,18 +217,46 @@ function renderWorkSection() {
     // check if email is valid
     const emailRegex =
       /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (!emailRegex.test(email.value)) {
       emailError.textContent = "Invalid email format";
       emailError.style.display = "block";
       return;
     }
-
-    // submit the form if all validations pass
+    // submit the form if all validations pass and hide all message
+    emailError.style.display = "none";
     form.submit();
   });
 
-  //Storage user data
-  
+  //Set localStorage
+  let formData = {}; // Create an empty object to store the form data
+
+  // Add event listeners to each input field to track changes
+  form.querySelectorAll("input, textarea").forEach((input) => {
+    input.addEventListener("keyup", () => {
+      // Update the formData object with the input field data
+      formData[input.name] = input.value;
+
+      // Store the formData object in localStorage as a JSON string
+      localStorage.setItem("userData", JSON.stringify(formData));
+    });
+  });
+
+  // Load data from localStorage when the page loads and fills the form
+  window.addEventListener("load", () => {
+    // Parse the stored formData object from localStorage and set the input fields' values
+    let storedData = JSON.parse(localStorage.getItem("userData"));
+
+    if (storedData) {
+      formData = storedData; // Update the formData object with the stored data
+
+      form.querySelectorAll("input, textarea").forEach((input) => {
+        if (formData[input.name]) {
+          input.value = formData[input.name];
+        }
+      });
+    }
+  });
 }
 
-window.onload = renderWorkSection;
+renderWorkSection();

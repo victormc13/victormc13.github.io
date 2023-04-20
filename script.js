@@ -242,20 +242,6 @@ form.querySelectorAll('input, textarea').forEach((input) => {
   });
 });
 
-// Load data from localStorage when the page loads and fills the form
-window.addEventListener('load', () => {
-  // Parse the stored formData object from localStorage and set the input fields' values
-  const storedData = JSON.parse(localStorage.getItem('userData'));
 
-  if (storedData) {
-    formData = storedData; // Update the formData object with the stored data
-
-    form.querySelectorAll('input, textarea').forEach((input) => {
-      if (formData[input.name]) {
-        input.value = formData[input.name];
-      }
-    });
-  }
-});
 
 renderWorkSection();

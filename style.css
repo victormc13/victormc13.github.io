@@ -116,6 +116,7 @@ h1::after {
   flex-direction: column;
   gap: 2rem;
   font-size: 2rem;
+  font-weight: 600;
   align-self: flex-start;
   align-items: flex-start;
 }

@@ -230,7 +230,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+<!-- > Describe 1 - 3 features you will add to the project. -->
 
 - [ ] **[Add more style to the project]**
 - [ ] **[Improve accessibility of the page]**

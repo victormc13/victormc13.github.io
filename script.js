@@ -1,21 +1,21 @@
 // Mobile menu
-const menuBtn = document.querySelector(".menu-btn");
-const closeBtn = document.querySelector(".close-btn");
-const menuOptions = document.querySelector(".menu-options");
-const menu = document.getElementById("menu");
+const menuBtn = document.querySelector('.menu-btn');
+const closeBtn = document.querySelector('.close-btn');
+const menuOptions = document.querySelector('.menu-options');
+const menu = document.getElementById('menu');
 
 // Open menu
-menuBtn.addEventListener("click", () => {
-  menu.style.display = "block";
+menuBtn.addEventListener('click', () => {
+  menu.style.display = 'block';
 });
 // Close menu
-closeBtn.addEventListener("click", () => {
-  menu.style.display = "none";
+closeBtn.addEventListener('click', () => {
+  menu.style.display = 'none';
 });
 // Close the menu if any link it's clicked
-menuOptions.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
-    menu.style.display = "none";
+menuOptions.addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    menu.style.display = 'none';
   }
 });
 
@@ -23,108 +23,108 @@ menuOptions.addEventListener("click", (event) => {
 const projects = [
   {
     id: 1,
-    name: "Multi-Post Stories Gain+Glory",
+    name: 'Multi-Post Stories Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imagemobile: "icons/Snapshoot Portfolio.svg",
-    imagedesktop: "icons/Snapshoot Portfolio desktop.svg",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    liveVersion: "#",
-    source: "#",
+    imagemobile: 'icons/Snapshoot Portfolio.svg',
+    imagedesktop: 'icons/Snapshoot Portfolio desktop.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersion: '#',
+    source: '#',
   },
   {
     id: 2,
-    name: "Multi-Post Stories Gain+Glory",
+    name: 'Multi-Post Stories Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imagemobile: "icons/Snapshoot Portfolio.svg",
-    imagedesktop: "icons/Snapshoot Portfolio desktop.svg",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    liveVersion: "#",
-    source: "#",
+    imagemobile: 'icons/Snapshoot Portfolio.svg',
+    imagedesktop: 'icons/Snapshoot Portfolio desktop.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersion: '#',
+    source: '#',
   },
   {
     id: 3,
-    name: "Multi-Post Stories Gain+Glory",
+    name: 'Multi-Post Stories Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imagemobile: "icons/Snapshoot Portfolio.svg",
-    imagedesktop: "icons/Snapshoot Portfolio desktop.svg",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    liveVersion: "#",
-    source: "#",
+    imagemobile: 'icons/Snapshoot Portfolio.svg',
+    imagedesktop: 'icons/Snapshoot Portfolio desktop.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersion: '#',
+    source: '#',
   },
   {
     id: 4,
-    name: "Multi-Post Stories Gain+Glory",
+    name: 'Multi-Post Stories Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imagemobile: "icons/Snapshoot Portfolio.svg",
-    imagedesktop: "icons/Snapshoot Portfolio desktop.svg",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    liveVersion: "#",
-    source: "#",
+    imagemobile: 'icons/Snapshoot Portfolio.svg',
+    imagedesktop: 'icons/Snapshoot Portfolio desktop.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersion: '#',
+    source: '#',
   },
   {
     id: 5,
-    name: "Multi-Post Stories Gain+Glory",
+    name: 'Multi-Post Stories Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imagemobile: "icons/Snapshoot Portfolio.svg",
-    imagedesktop: "icons/Snapshoot Portfolio desktop.svg",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    liveVersion: "#",
-    source: "#",
+    imagemobile: 'icons/Snapshoot Portfolio.svg',
+    imagedesktop: 'icons/Snapshoot Portfolio desktop.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersion: '#',
+    source: '#',
   },
   {
     id: 6,
-    name: "Multi-Post Stories Gain+Glory",
+    name: 'Multi-Post Stories Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imagemobile: "icons/Snapshoot Portfolio.svg",
-    imagedesktop: "icons/Snapshoot Portfolio desktop.svg",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    liveVersion: "#",
-    source: "#",
+    imagemobile: 'icons/Snapshoot Portfolio.svg',
+    imagedesktop: 'icons/Snapshoot Portfolio desktop.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersion: '#',
+    source: '#',
   },
 ];
 
 // WorkSection
 function renderWorkSection() {
-  const workSection = document.getElementById("work-section");
-  workSection.classList.add("work-section-container", "flex-column");
+  const workSection = document.getElementById('work-section');
+  workSection.classList.add('work-section-container', 'flex-column');
 
   const projectCardsContainer = document.querySelector(
-    ".projectcards-container"
+    '.projectcards-container',
   );
   // Creating an h2 element for the Work section's title
-  const titleWorkSection = document.createElement("h2");
-  titleWorkSection.textContent = "My Recent Works";
-  titleWorkSection.classList.add("title-work-section");
-  projectCardsContainer.insertAdjacentElement("beforebegin", titleWorkSection); // insert before to show up as title
+  const titleWorkSection = document.createElement('h2');
+  titleWorkSection.textContent = 'My Recent Works';
+  titleWorkSection.classList.add('title-work-section');
+  projectCardsContainer.insertAdjacentElement('beforebegin', titleWorkSection); // insert before to show up as title
 
   // Loop through each project and create a card for it
   projects.forEach((project) => {
-    const projectCard = document.createElement("article");
-    const contentCard = document.createElement("div");
-    const projectTitle = document.createElement("h3");
-    const technologiesList = document.createElement("ul");
-    const seeProjectBtn = document.createElement("button");
+    const projectCard = document.createElement('article');
+    const contentCard = document.createElement('div');
+    const projectTitle = document.createElement('h3');
+    const technologiesList = document.createElement('ul');
+    const seeProjectBtn = document.createElement('button');
 
-    projectCard.classList.add("project-cards", "flex-column");
-    contentCard.classList.add("content-cards", "flex-column");
+    projectCard.classList.add('project-cards', 'flex-column');
+    contentCard.classList.add('content-cards', 'flex-column');
     projectTitle.textContent = project.name;
-    technologiesList.classList.add("technologies", "flex-row");
+    technologiesList.classList.add('technologies', 'flex-row');
 
     // Loop through each technology and add it to the technologies list
     project.technologies.forEach((technology) => {
-      const technologyItem = document.createElement("li");
+      const technologyItem = document.createElement('li');
       technologyItem.textContent = technology;
       technologiesList.appendChild(technologyItem);
     });
 
-    seeProjectBtn.textContent = "See project";
-    seeProjectBtn.classList.add("project-btn", "btn");
+    seeProjectBtn.textContent = 'See project';
+    seeProjectBtn.classList.add('project-btn', 'btn');
     seeProjectBtn.id = project.id;
 
     contentCard.appendChild(projectTitle);
@@ -134,13 +134,13 @@ function renderWorkSection() {
 
     // Check if the value is an element before using insertAdjacentElement
     if (projectCardsContainer.nodeType === Node.ELEMENT_NODE) {
-      projectCardsContainer.insertAdjacentElement("beforeend", projectCard);
+      projectCardsContainer.insertAdjacentElement('beforeend', projectCard);
     }
 
     // Render the shownProject
     function renderShownProject(workSection) {
       const shownprojectContainer = document.querySelector(
-        ".shown-project-container"
+        '.shown-project-container',
       );
 
       const showprojectContent = `<div class="shown-project flex-column">
@@ -158,27 +158,27 @@ function renderWorkSection() {
     </div>`;
       if (shownprojectContainer.nodeType === Node.ELEMENT_NODE) {
         shownprojectContainer.insertAdjacentHTML(
-          "beforeend",
-          showprojectContent
+          'beforeend',
+          showprojectContent,
         );
       }
-      workSection.insertAdjacentElement("beforeend", shownprojectContainer);
+      workSection.insertAdjacentElement('beforeend', shownprojectContainer);
     }
     renderShownProject(workSection);
 
     // PopUp
-    const projectButtons = document.querySelectorAll(".project-btn");
-    const closeShownProject = document.querySelectorAll(".close-shown-project");
-    const popupContainer = document.querySelector(".shown-project-container");
+    const projectButtons = document.querySelectorAll('.project-btn');
+    const closeShownProject = document.querySelectorAll('.close-shown-project');
+    const popupContainer = document.querySelector('.shown-project-container');
 
     const openPopup = () => {
-      popupContainer.style.display = "block";
-      document.body.style.overflow = "hidden";
+      popupContainer.style.display = 'block';
+      document.body.style.overflow = 'hidden';
     };
 
     const closePopup = () => {
-      popupContainer.style.display = "none";
-      document.body.style.overflow = "";
+      popupContainer.style.display = 'none';
+      document.body.style.overflow = '';
     };
 
     const clickPopupContainer = (event) => {
@@ -189,69 +189,68 @@ function renderWorkSection() {
 
     // Opens the popup when click each button with the class project-btn
     projectButtons.forEach((projectButton) => {
-      projectButton.addEventListener("click", openPopup);
+      projectButton.addEventListener('click', openPopup);
     });
 
     closeShownProject.forEach((closeProjects) => {
-      closeProjects.addEventListener("click", closePopup);
+      closeProjects.addEventListener('click', closePopup);
     });
 
-    popupContainer.addEventListener("click", clickPopupContainer);
+    popupContainer.addEventListener('click', clickPopupContainer);
   });
 }
 
 // Validate contact form
-const form = document.getElementById("form");
-const email = document.getElementById("mail");
-const emailError = document.getElementById("email-error");
+const form = document.getElementById('form');
+const email = document.getElementById('mail');
+const emailError = document.getElementById('email-error');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   // check if email is lowercase
   if (email.value !== email.value.toLowerCase()) {
-    emailError.textContent = "Email must be in lowercase";
-    emailError.style.display = "block";
+    emailError.textContent = 'Email must be in lowercase';
+    emailError.style.display = 'block';
     return;
   }
 
   // check if email is valid
-  const emailRegex =
-    /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (!emailRegex.test(email.value)) {
-    emailError.textContent = "Invalid email format";
-    emailError.style.display = "block";
+    emailError.textContent = 'Invalid email format';
+    emailError.style.display = 'block';
     return;
   }
   // submit the form if all validations pass and hide all message
-  emailError.style.display = "none";
+  emailError.style.display = 'none';
   form.submit();
 });
 
-//Set localStorage
+// Set localStorage
 let formData = {}; // Create an empty object to store the form data
 
 // Add event listeners to each input field to track changes
-form.querySelectorAll("input, textarea").forEach((input) => {
-  input.addEventListener("keyup", () => {
+form.querySelectorAll('input, textarea').forEach((input) => {
+  input.addEventListener('keyup', () => {
     // Update the formData object with the input field data
     formData[input.name] = input.value;
 
     // Store the formData object in localStorage as a JSON string
-    localStorage.setItem("userData", JSON.stringify(formData));
+    localStorage.setItem('userData', JSON.stringify(formData));
   });
 });
 
 // Load data from localStorage when the page loads and fills the form
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   // Parse the stored formData object from localStorage and set the input fields' values
-  let storedData = JSON.parse(localStorage.getItem("userData"));
+  const storedData = JSON.parse(localStorage.getItem('userData'));
 
   if (storedData) {
     formData = storedData; // Update the formData object with the stored data
 
-    form.querySelectorAll("input, textarea").forEach((input) => {
+    form.querySelectorAll('input, textarea').forEach((input) => {
       if (formData[input.name]) {
         input.value = formData[input.name];
       }

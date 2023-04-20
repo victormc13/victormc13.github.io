@@ -9,7 +9,16 @@ menuBtn.addEventListener("click", () => {
   menu.style.display = "block";
 });
 
-
+// Close menu
+closeBtn.addEventListener("click", () => {
+  menu.style.display = "none";
+});
+// Close the menu if any link it's clicked
+menuOptions.addEventListener("click", (event) => {
+  if (event.target.tagName === "A") {
+    menu.style.display = "none";
+  }
+});
 
 // Projects
 const projects = [
@@ -220,7 +229,6 @@ function renderWorkSection() {
   });
 
   //Storage user data
-  
 }
 
 window.onload = renderWorkSection;

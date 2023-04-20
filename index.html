@@ -166,7 +166,7 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
-        <form
+        <form id="form"
           action="https://formspree.io/f/xgebnejv"
           method="POST"
           class="form-fields flex-column"
@@ -202,7 +202,10 @@
               required
             ></textarea>
           </label>
-          <button class="form-btn btn" type="submit">Get in touch</button>
+          <div class="submit-container flex-row">
+            <button class="form-btn btn" type="submit">Get in touch</button>
+            <small class="email-error" id="email-error"></small>
+          </div>
         </form>
       </section>
     </main>

@@ -218,11 +218,11 @@ Example:
 - Twitter: [@VctorMC20](https://twitter.com/VctorMC20)
 - LinkedIn: [Victor MC](https://www.linkedin.com/in/victormc13/)
 
-<!-- 👤 **Author2**
+👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
+- GitHub: [@Cavein254](https://github.com/Cavein254)
+- Twitter: [@JohnMuthua5](https://www.linkedin.com/in/muthuahjohn/)
+- LinkedIn: [LinkedIn](https://twitter.com/JohnMuthua5)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,7 +230,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+<!-- > Describe 1 - 3 features you will add to the project. -->
 
 - [ ] **[Add more style to the project]**
 - [ ] **[Improve accessibility of the page]**

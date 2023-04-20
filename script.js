@@ -176,16 +176,7 @@ function renderWorkSection() {
       document.body.style.overflow = 'hidden';
     };
 
-    const closePopup = () => {
-      popupContainer.style.display = 'none';
-      document.body.style.overflow = '';
-    };
-
-    const clickPopupContainer = (event) => {
-      if (event.target === popupContainer) {
-        closePopup();
-      }
-    };
+    
 
     // Opens the popup when click each button with the class project-btn
     projectButtons.forEach((projectButton) => {

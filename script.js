@@ -1,4 +1,4 @@
-// Menu mobile
+// Mobile menu
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.close-btn');
 const menuOptions = document.querySelector('.menu-options');
@@ -8,6 +8,7 @@ const menu = document.getElementById('menu');
 menuBtn.addEventListener('click', () => {
   menu.style.display = 'block';
 });
+
 // Close menu
 closeBtn.addEventListener('click', () => {
   menu.style.display = 'none';
@@ -198,6 +199,35 @@ function renderWorkSection() {
 
     popupContainer.addEventListener('click', clickPopupContainer);
   });
+
+  // Validate contact form
+  const form = document.getElementById('form');
+  const email = document.getElementById('mail');
+  const emailError = document.getElementById('email-error');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // check if email is lowercase
+    if (email.value !== email.value.toLowerCase()) {
+      emailError.textContent = 'Email must be in lowercase';
+      emailError.style.display = 'block';
+      return;
+    }
+
+    // check if email is valid
+    const emailRegex = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!emailRegex.test(email.value)) {
+      emailError.textContent = 'Invalid email format';
+      emailError.style.display = 'block';
+      return;
+    }
+
+    // submit the form if all validations pass
+    form.submit();
+  });
+
+  // Storage user data
 }
 
 window.onload = renderWorkSection;

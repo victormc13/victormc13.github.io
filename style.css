@@ -423,9 +423,8 @@ main {
   text-align: center;
   gap: 1.5rem;
   justify-content: flex-end;
-  background:
-    url(icons/illustration\ 1-\ about\ me-mobile.svg) no-repeat top
-    right,
+  background: url(icons/illustration\ 1-\ about\ me-mobile.svg) no-repeat top
+      right,
     url(icons/illustration\ 2-about\ me\ mobile.svg) no-repeat bottom left;
 }
 
@@ -542,13 +541,13 @@ main {
 }
 
 .submit-container {
-  align-self: flex-start;
-  gap: 3rem;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .email-error {
-  bottom: 0;
-  padding-top: 1rem;
   display: none;
   color: rgb(247, 51, 51);
   font-weight: 700;
@@ -623,9 +622,8 @@ textarea:focus {
   }
 
   main {
-    background:
-      url(icons/illustration-1-contact-form-desktop.svg) no-repeat
-      left 99%,
+    background: url(icons/illustration-1-contact-form-desktop.svg) no-repeat
+        left 99%,
       url(icons/illustration-2-contact-form-desktop.svg) no-repeat 30% 95.9%,
       url(icons/contact\ form-illustratoin-3-desktop.svg) no-repeat right 99.5%;
   }
@@ -756,9 +754,8 @@ textarea:focus {
   .about-me {
     margin-top: 4%;
     justify-content: center;
-    background:
-      url(icons/illustration-about\ me-1-desktop.svg) no-repeat right
-      5%,
+    background: url(icons/illustration-about\ me-1-desktop.svg) no-repeat right
+        5%,
       url(icons/illustration-about-me-2-desktop.svg) no-repeat left 60%;
   }
 
@@ -811,6 +808,18 @@ textarea:focus {
     box-shadow: -8px 8px 16px 0 rgba(19, 88, 60, 0.24);
     transform: translate(10px);
     transition: transform 0.5s ease-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .submit-container {
+    width: 100%;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 4rem;
+  }
+
+  .email-error {
+    display: none;
+    color: rgb(247, 51, 51);
   }
 
   .form-btn {

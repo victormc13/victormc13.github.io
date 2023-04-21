@@ -423,8 +423,9 @@ main {
   text-align: center;
   gap: 1.5rem;
   justify-content: flex-end;
-  background: url(icons/illustration\ 1-\ about\ me-mobile.svg) no-repeat top
-      right,
+  background:
+    url(icons/illustration\ 1-\ about\ me-mobile.svg) no-repeat top
+    right,
     url(icons/illustration\ 2-about\ me\ mobile.svg) no-repeat bottom left;
 }
 
@@ -622,8 +623,9 @@ textarea:focus {
   }
 
   main {
-    background: url(icons/illustration-1-contact-form-desktop.svg) no-repeat
-        left 99%,
+    background:
+      url(icons/illustration-1-contact-form-desktop.svg) no-repeat
+      left 99%,
       url(icons/illustration-2-contact-form-desktop.svg) no-repeat 30% 95.9%,
       url(icons/contact\ form-illustratoin-3-desktop.svg) no-repeat right 99.5%;
   }
@@ -754,8 +756,9 @@ textarea:focus {
   .about-me {
     margin-top: 4%;
     justify-content: center;
-    background: url(icons/illustration-about\ me-1-desktop.svg) no-repeat right
-        5%,
+    background:
+      url(icons/illustration-about\ me-1-desktop.svg) no-repeat right
+      5%,
       url(icons/illustration-about-me-2-desktop.svg) no-repeat left 60%;
   }
 
